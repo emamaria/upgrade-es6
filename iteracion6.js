@@ -21,8 +21,7 @@ const movie2010 = movies.find( movie => movie.date == 2010)
 
 console.log(movie2010);
 
-//6.3 Sin terminar ...No entiendo la pregunta
-
+//6.3 
 const aliens = [
 	{name: 'Zalamero', planet: 'Eden', age: 4029},
 	{name: 'Paktu', planet: 'Andromeda', age: 32},
@@ -39,5 +38,10 @@ let cucushumushu = aliens.find(alien => alien.name == "Cucushumushu")
 
 let porompompero = mutations.find( mutation => mutation.name = "Porompompero")
 
-let objectFusion =  {...cucushumushu, ...porompompero}
+
+
+let objectFusion = {mutation:{...cucushumushu, ...porompompero}}
+
+
+console.log(objectFusion);
 
